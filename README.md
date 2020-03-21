@@ -1,7 +1,7 @@
 # firefly-rk3399-android7.1
 Firefly-RK3399 Compile Android7.1 industry firmware (Ubuntu 12.04 64bit)
 
-=================================================================================================
+===========================================================================
 
 Preparation
 
@@ -33,7 +33,7 @@ Minimum requirements :
    RAM - 16 GB physical memory + swap memory
    Disk - 120 GB
 
-=================================================================================================
+===========================================================================
 
 Install OpenJDK 8:
 
@@ -88,7 +88,7 @@ Update Android 7.1
    .bundle/update
    git rebase FETCH_HEAD
 
-=================================================================================================
+===========================================================================
 
 Android 7.1 mkimage.sh fail on Ubuntu 12.04 
 
@@ -104,7 +104,7 @@ Patch ~/proj/firefly-rk3399-Industry/device/rockchip/common/sparse_tool.py
              buffer = bytearray(align_unit * 1024)
              offset = 0
 
-=================================================================================================
+===========================================================================
 
 Use Firefly’s script to compile
 
@@ -135,7 +135,7 @@ Compile EDP7.85
    ./FFTools/make.sh -j8 -d rk3399-firefly-edp -l rk3399_firefly_edp_box-userdebug
    ./FFTools/mkupdate/mkupdate.sh -l rk3399_firefly_edp_box-userdebug
 
-=================================================================================================
+===========================================================================
 
 Manual compilation
 
@@ -156,13 +156,13 @@ Compile Android：
    make -j8
    ./mkimage.sh
 
-=================================================================================================
+===========================================================================
 
 Create update.img
 
    Compiled with Firefly’s script can be packaged into update.img, run: ./FFTools/mkupdate/mkupdate.sh update After the package is finished, the update.img will be generated under rockdev/Image-rk3399_firefly_box/ Create update.img in Windows is simple. Just copy the files to AndroidTool’s rockdev\Image directory as previous step. Then run the batch file mkupdate.bat in rockdev directory, which will create update.img under rockdev\Image.
 
-=================================================================================================
+===========================================================================
 
 Flashing partition images
 
@@ -178,4 +178,4 @@ Flashing partition images
    RK3399MiniLoaderAll_V1.05.bin ：Loader
    uboot.img ：uboot
 
-=================================================================================================
+===========================================================================
