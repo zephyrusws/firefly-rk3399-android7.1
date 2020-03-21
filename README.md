@@ -78,6 +78,12 @@ mv rk3399-industry-nougat-bundle/ .bundle/
 git rebase FETCH_HEAD
 ```
 
+# Android source code compile error: "Try increasing heap size with java option '-Xmx<size>'"
+```
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
+jack-admin kill-server && jack-admin start-server
+```
+
 # Android 7.1 mkimage.sh fail on Ubuntu 12.04 
 
 Patch ~/proj/firefly-rk3399-Industry/device/rockchip/common/sparse_tool.py
