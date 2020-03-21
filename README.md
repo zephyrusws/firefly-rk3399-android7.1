@@ -16,7 +16,7 @@ To compile Android, requirement of PC is:
   * 64 bit CPU
   * 16 GB physical memory + swap memory
   * 30 GB free disk space to build. The source code tree take another 8 GB space. 
-  *   => 100 GB free disk space to builds. The source code tree take another 13 GB space. 
+     => 100 GB free disk space to builds. The source code tree take another 13 GB space. 
 
 Minimum requirements :
   * CPU - 4 Cores
