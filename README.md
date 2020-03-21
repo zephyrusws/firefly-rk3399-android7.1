@@ -157,7 +157,7 @@ make -j8
 
 # Create update.img
 
-  * Compiled with Firefly’s script can be packaged into update.img, run: ./FFTools/mkupdate/mkupdate.sh update After the package is finished, the update.img will be generated under rockdev/Image-rk3399_firefly_box/ Create update.img in Windows is simple. Just copy the files to AndroidTool’s rockdev\Image directory as previous step. Then run the batch file mkupdate.bat in rockdev directory, which will create update.img under rockdev\Image.
+Compiled with Firefly’s script can be packaged into update.img, run: ./FFTools/mkupdate/mkupdate.sh update After the package is finished, the update.img will be generated under rockdev/Image-rk3399_firefly_box/ Create update.img in Windows is simple. Just copy the files to AndroidTool’s rockdev\Image directory as previous step. Then run the batch file mkupdate.bat in rockdev directory, which will create update.img under rockdev\Image.
 
 
 # Flashing partition images
