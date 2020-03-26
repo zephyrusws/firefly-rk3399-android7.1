@@ -53,6 +53,11 @@ Install Cross compiler:
 sudo apt-get install gcc-arm-linux-gnueabihf  lzop libncurses5-dev  libssl1.0.0 libssl-dev
 ```
 
+Install Tools for NDK:
+```
+sudo apt-get install texinfo wine bison flex dmake libtool pbzip2
+```
+
 Set environmental variables:
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
